@@ -21,7 +21,7 @@ public class RestConfig {
         return new RepositoryRestConfigurerAdapter() {
             @Override
             public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-                config.exposeIdsFor(TdCarrier.class, TdCountry.class, TdPort.class, TdSeaexpressprice.class, Userinfo.class);
+                config.exposeIdsFor(Carrier.class, Country.class, Port.class, Seaexpressprice.class, Userinfo.class);
             }
         };
     }

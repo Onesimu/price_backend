@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-public class TdCarrier {
+public class Carrier {
 
  @Id
  @GeneratedValue(strategy = GenerationType.IDENTITY)

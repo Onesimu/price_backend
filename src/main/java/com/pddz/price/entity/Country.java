@@ -6,18 +6,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-public class TdPort {
+public class Country {
 
  @Id
  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private String portId;
+  private String countryId;
+  private String regionId;
+  private String code;
   private String nameEn;
   private String nameCn;
-  private String code;
-  private String countryId;
-  private String state;
-  private String routeLineAreaId;
-  private Long isCommon;
   private Long flag;
   private java.sql.Timestamp createTime;
   private String createStaffid;
@@ -25,17 +22,32 @@ public class TdPort {
   private String updateStaffid;
   private String hostId;
   private String remark;
-  private String declareType;
-  private String longitude;
-  private String latitude;
 
 
-  public String getPortId() {
-    return portId;
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setPortId(String portId) {
-    this.portId = portId;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
+  }
+
+
+  public String getRegionId() {
+    return regionId;
+  }
+
+  public void setRegionId(String regionId) {
+    this.regionId = regionId;
+  }
+
+
+  public String getCode() {
+    return code;
+  }
+
+  public void setCode(String code) {
+    this.code = code;
   }
 
 
@@ -54,51 +66,6 @@ public class TdPort {
 
   public void setNameCn(String nameCn) {
     this.nameCn = nameCn;
-  }
-
-
-  public String getCode() {
-    return code;
-  }
-
-  public void setCode(String code) {
-    this.code = code;
-  }
-
-
-  public String getCountryId() {
-    return countryId;
-  }
-
-  public void setCountryId(String countryId) {
-    this.countryId = countryId;
-  }
-
-
-  public String getState() {
-    return state;
-  }
-
-  public void setState(String state) {
-    this.state = state;
-  }
-
-
-  public String getRouteLineAreaId() {
-    return routeLineAreaId;
-  }
-
-  public void setRouteLineAreaId(String routeLineAreaId) {
-    this.routeLineAreaId = routeLineAreaId;
-  }
-
-
-  public Long getIsCommon() {
-    return isCommon;
-  }
-
-  public void setIsCommon(Long isCommon) {
-    this.isCommon = isCommon;
   }
 
 
@@ -162,33 +129,6 @@ public class TdPort {
 
   public void setRemark(String remark) {
     this.remark = remark;
-  }
-
-
-  public String getDeclareType() {
-    return declareType;
-  }
-
-  public void setDeclareType(String declareType) {
-    this.declareType = declareType;
-  }
-
-
-  public String getLongitude() {
-    return longitude;
-  }
-
-  public void setLongitude(String longitude) {
-    this.longitude = longitude;
-  }
-
-
-  public String getLatitude() {
-    return latitude;
-  }
-
-  public void setLatitude(String latitude) {
-    this.latitude = latitude;
   }
 
 }
