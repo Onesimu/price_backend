@@ -17,6 +17,8 @@ public class Portview {
   private String countryId;
   private String state;
   private String routeLineAreaId;
+  private String routeLineArea;
+  private String routeLineAreaCode;
   private Long isCommon;
   private Long flag;
   private java.sql.Timestamp createTime;
@@ -94,6 +96,24 @@ public class Portview {
 
   public void setRouteLineAreaId(String routeLineAreaId) {
     this.routeLineAreaId = routeLineAreaId;
+  }
+
+
+  public String getRouteLineArea() {
+    return routeLineArea;
+  }
+
+  public void setRouteLineArea(String routeLineArea) {
+    this.routeLineArea = routeLineArea;
+  }
+
+
+  public String getRouteLineAreaCode() {
+    return routeLineAreaCode;
+  }
+
+  public void setRouteLineAreaCode(String routeLineAreaCode) {
+    this.routeLineAreaCode = routeLineAreaCode;
   }
 
 
