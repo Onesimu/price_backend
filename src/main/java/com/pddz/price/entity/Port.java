@@ -2,14 +2,12 @@ package com.pddz.price.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 
 @Entity
 public class Port {
 
  @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY)
+// @GeneratedValue(strategy = GenerationType.IDENTITY)
   private String portId;
   private String nameEn;
   private String nameCn;
