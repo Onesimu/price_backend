@@ -2,14 +2,12 @@ package com.pddz.price.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 
 @Entity
 public class Carrier {
 
  @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY)
+// @GeneratedValue(strategy = GenerationType.IDENTITY)
   private String carrierId;
   private String nameEn;
   private String nameCn;
