@@ -1,7 +1,6 @@
 package com.pddz.price.dao;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import com.pddz.price.entity.Country;
 
-public interface CountryRepository extends JpaRepository<Country, String> {
+public interface CountryRepository extends BaseRepository<Country, String> {
 }
