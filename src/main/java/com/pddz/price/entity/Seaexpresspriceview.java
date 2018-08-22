@@ -32,6 +32,7 @@ public class Seaexpresspriceview {
     private String transTypeId;
     private String contractNo;
     private String waiPeiCompanyId;
+    private String waiPeiCompanyNameCn;
     private Long flag;
     private java.sql.Timestamp createTime;
     private String createStaffid;
